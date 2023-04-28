@@ -307,7 +307,10 @@ A successful response includes the JSON object:
 ```javascript
 {
     // Indicates the remove succeeded, always true.
-    "ok": true
+    "ok": true,
+    // An unused message field that causes
+    // cargo to error on the user if it's not included
+    "msg": "This will never be seen"
 }
 ```
 
